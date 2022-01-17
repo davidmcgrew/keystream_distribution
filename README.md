@@ -2,6 +2,8 @@
 
 This repo contains the source code to build the utility program `keystream_distribution`, which computes the distribution of keystream bytes for rc4.  This information can be useful for studying the security of real-world applications, and the implementation itself is a good example of the use of C++ `for_each`/`accumulate` with a parallel execution policy.
 
+## Building and Running
+
 To build, install TBB (libtbb-dev) then run `make`.  To run, see the usage below.
 
 ```
@@ -45,3 +47,7 @@ FILE FORMAT
 
 
 ```
+
+## License
+
+This code is [licensend](LICENSE) under a [New BSD license](https://opensource.org/licenses/BSD-3-Clause).
