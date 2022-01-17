@@ -1,8 +1,8 @@
-keystream_distribution
+# Tools for computing the keystream distribution for rc4 and other keystream generators
 
-Tools for computing the distribution of keystream bytes for RC4 and other keystream generators
+This repo contains the source code to build the utility program `keystream_distribution`, which computes the distribution of keystream bytes for rc4.  This information can be useful for studying the security of real-world applications, and the implementation itself is a good example of the use of C++ `for_each`/`accumulate` with a parallel execution policy.
 
-
+To build, install TBB (libtbb-dev) then run `make`.  To run, see the usage below.
 
 ```
 Usage: ./keystream_distribution [COMMAND], where COMMAND is one of:
